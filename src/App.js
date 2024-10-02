@@ -2,10 +2,11 @@
 import './App.css';
 
 //components
-import FirstComponent from './components/FirstComponent';
-import TemplateExpressions from './components/TemplateExpressions';
-import MyComponent from './components/MyComponent';
+import Challenge from './components/Challenge';
 import Events from './components/Events';
+import FirstComponent from './components/FirstComponent';
+import MyComponent from './components/MyComponent';
+import TemplateExpressions from './components/TemplateExpressions';
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
      <TemplateExpressions/>
      <MyComponent/>
      <Events/>
+     <Challenge/>
     </div>
   );
 }
