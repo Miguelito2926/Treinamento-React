@@ -1,9 +1,10 @@
+//styles /css
+import './App.css';
+
 //components
 import FirstComponent from './components/FirstComponent';
 import TemplateExpressions from './components/TemplateExpressions';
-
-//styles /css
-import './App.css';
+import MyComponent from './components/MyComponent';
 
 export default function App() {
   return (
@@ -12,6 +13,7 @@ export default function App() {
 
      <FirstComponent/>
      <TemplateExpressions/>
+     <MyComponent/>
     </div>
   );
 }
