@@ -1,11 +1,14 @@
 
 import './App.css';
 import Donald from "./assets/donald.png";
+import ManageData from './components/ManageData';
 
 function App() {
   return (
     <div className="App">
       <h1>Bem-vindo! Fundamentos 2 intermediário,</h1>
+      
+      <ManageData/>
      
      {/*Imagem em public */}
      <div>
