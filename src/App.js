@@ -1,8 +1,10 @@
 import './App.css'
 import Donald from './assets/donald.png'
+import CarDetails from './components/CarDetails'
 import ConditionalRender from './components/ConditionalRender'
 import LisRender from './components/ListRender'
 import ManageData from './components/ManageData'
+import ShowUserName from './components/ShowUserName'
 
 function App () {
   return (
@@ -21,6 +23,11 @@ function App () {
       <ManageData/>
       <LisRender/>   
       <ConditionalRender/>   
+      {/*Props */}
+      <ShowUserName name="Ed"/>
+
+      {/*Destrucruring*/}
+      <CarDetails model="FIAT" km={80000} color="Prata"/>
     </div>
   )
 }
