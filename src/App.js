@@ -1,5 +1,6 @@
 import './App.css'
 import Donald from './assets/donald.png'
+import ConditionalRender from './components/ConditionalRender'
 import LisRender from './components/ListRender'
 import ManageData from './components/ManageData'
 
@@ -17,8 +18,9 @@ function App () {
       <div>
         <img src={Donald} alt='Pato' />
       </div>
-      <ManageData />
-      <LisRender />      
+      <ManageData/>
+      <LisRender/>   
+      <ConditionalRender/>   
     </div>
   )
 }
