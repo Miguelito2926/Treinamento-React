@@ -1,19 +1,31 @@
 
+import { useState } from 'react';
 import './App.css'
-import Donald from './assets/donald.png'
-import CarDetails from './components/CarDetails'
-import ConditionalRender from './components/ConditionalRender'
-import LisRender from './components/ListRender'
-import ManageData from './components/ManageData'
-import ShowUserName from './components/ShowUserName'
-import Fragments from './components/Fragments'
-import Container from './components/Container'
+import ExecuteFunction from './components/ExecuteFunction';
+import Message from './components/Message';
+import ChangeMessage from './components/ChangeMessage';
 
 function App () {  
+
+function showMenssage() {
+  console.log("Evento do compomente Pai!");
+}
+
+const [message, setMessage] = useState("");
+
+const handleMessage = (msg) => {
+  setMessage(msg);
+};
 
   return (
     <div className='App'>
      
+     <ExecuteFunction myFunction={showMenssage}/>
+      
+      {/*State lift*/}
+      <Message msg={message}/>
+      <ChangeMessage handleMessage={handleMessage}/>
+
     </div>
   )
 }
