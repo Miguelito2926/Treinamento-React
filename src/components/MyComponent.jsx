@@ -3,6 +3,8 @@ import './MyComponent.css'
 
 export default function MyComponent() {
   const cor = 10;
+  const redTitle = true;
+
   const [nome] = useState("Miguel");
   return (
     <div>
@@ -15,6 +17,9 @@ export default function MyComponent() {
         <h2 style={nome ===  "Miguel" ? {color:'blue', backgroundColor:'red'} : null }>
           Teste nome, {nome}
         </h2>
+
+        {/*Texto com classe dinamica*/}
+        <h2 className={redTitle ? 'red-title' : 'title' }>Texto com classe dinamica</h2>
     </div>
   )
 }
