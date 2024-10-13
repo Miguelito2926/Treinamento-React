@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './MyComponent.css'
+import Title from './Title';
 
 export default function MyComponent() {
   const cor = 10;
@@ -20,6 +21,9 @@ export default function MyComponent() {
 
         {/*Texto com classe dinamica*/}
         <h2 className={redTitle ? 'red-title' : 'title' }>Texto com classe dinamica</h2>
+
+         {/*Css module*/}
+         <Title/>
     </div>
   )
 }
