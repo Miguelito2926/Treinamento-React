@@ -8,6 +8,7 @@ function App() {
   return (
     <>
       <h1>React com CSS</h1>
+      <p>Este paragrafo é do App.jsx</p>
 
     </>
   )
