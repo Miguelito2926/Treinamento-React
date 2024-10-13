@@ -1,13 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './MyComponent.css'
 
 export default function MyComponent() {
+  const cor = 10;
+  const [nome] = useState("Miguel");
   return (
     <div>
         <h1>Css de Compomente</h1>
         <p>Parágrafo do Compomente</p>
         <p style={{color:'green', padding:'10px', borderTop:'2px solid red'}}>Parágrafo estilizado com css inline</p>
+        <p style={cor < 10 ? {color:'yellow'} : {color:'gray'} }>CSS Dinâmico</p>
         <p className='my-component-paragrafo'>Este Também é Parágrafo do Compomente estilizado com className </p>
+  
+        <h2 style={nome ===  "Miguel" ? {color:'blue', backgroundColor:'red'} : null }>
+          Teste nome, {nome}
+        </h2>
     </div>
   )
 }
